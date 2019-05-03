@@ -178,7 +178,7 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0, auto;
-  background: #f6f6f6;
+  background: #F6F6F6;
 }
 .navigation h1 {
   margin-top: 20px;
@@ -197,6 +197,12 @@ p {
   padding: 0px 20px 0px;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 500px) {
+  .navigation nav a {
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+  }
 }
 footer {
   color: #22283B;
@@ -257,7 +263,7 @@ footer {
 }
 .home .walk .walk-text .btn {
   border-radius: 5px;
-  background: #212529;
+  background: #22283A;
   color: white;
   border: none;
   text-align: center;
@@ -265,8 +271,8 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   background: white;
-  color: #212529;
-  border: 2px solid black;
+  color: #22283A;
+  border: 2px solid #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

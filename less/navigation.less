@@ -9,6 +9,9 @@
 
     background: @wild-sand;
 
+  
+
+
     h1 {
         margin-top:20px;
         font-size: 3.2rem;
@@ -20,10 +23,17 @@
         justify-content: space-between;
         align-items: center;
         margin-top:20px;
-        margin-bottom:10px;
-
+        margin-bottom:10px;  
+        
+     
         a{
-          .navlinks();
+          .navlinks();   
+          
+          @media @mobile{
+        justify-content:space-evenly;
+        font-size: 1.25rem;
+        }
+
         }  
     }
 
