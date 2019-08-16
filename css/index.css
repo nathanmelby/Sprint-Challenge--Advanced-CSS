@@ -185,9 +185,10 @@ p {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 800px;
   background: #F6F6F6;
   opacity: 0.95;
-  z-index: 99999;
+  z-index: 9999;
   position: fixed;
   top: 0;
 }
