@@ -8,6 +8,16 @@
   text-decoration: none;
   color: #454A59;
 }
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,6 +187,7 @@ p {
   width: 100%;
   background: #F6F6F6;
   opacity: 0.95;
+  z-index: 99999;
   position: fixed;
   top: 0;
 }
@@ -221,6 +232,11 @@ footer {
 }
 .main-content {
   margin-top: 135px;
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .home .intro img {
   width: 100%;
