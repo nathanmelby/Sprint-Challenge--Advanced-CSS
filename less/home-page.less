@@ -1,13 +1,22 @@
 // Home Content
+.main-content {
+  margin-top: 135px;
 
+  opacity:0;
+
+  animation: HeroAnimation;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1)
+}
 .home {
-
   
+
 
   .intro {
 
     img {
-      .image1 (); 
+      .topImage ();
     }
 
     h2 {
@@ -24,34 +33,31 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    @media @mobile{
-          .sky{
-            display: none;
-          }
-          .launch{
-            display:none;
-          }
-        
-      }
+
+    @media @phone{
+        .launch{
+          display:none;
+        }
+
+        .sky{
+          display:none;
+        }
+    }//this closes @media
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
-      height: 100%; 
-      @media @mobile{
+      height: 100%;
+      @media @phone {
         width:100%;
-        margin: 20px 5%;
-        }
+        margin: 20px 4%;
       }
-    
-  }
+    }
+  }//this closes space-images
 
   .visit-planets {
     padding: 15px;
-
-    @media @mobile{
-      padding-bottom: 0px;
-      }
 
     h3 {
       margin-top: 11px;
@@ -60,7 +66,7 @@
     p {
       margin-top: 13px;
     }
-  }
+  }//this closes visit-planets
 
   .walk {
     margin-top: 60px;
@@ -69,20 +75,19 @@
     display: flex;
     justify-content: center;
 
-    @media @mobile{
-      flex-direction:column-reverse;
+    @media @phone {
       width:100%;
-      padding: 20px 5% 20px 5%;
-      }
-
- 
+      flex-direction: column-reverse;
+      padding: 15px 4% 15px 4%;
+      margin-top: 10px;
+    }
 
     .walk-text {
       width: 50%;
-
-      @media @mobile{
+      
+      @media @phone{
         width:100%;
-        }
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -93,37 +98,36 @@
       }
 
       .btn {
-        .signupbutton(80px, 5px);
-          &:hover {
-           background:white;
-            color: @btn-bg-color;
-            border: 1px solid @btn-bg-color;
-          }
-
-          @media @mobile{
-            width:100%;
-            padding:20px;
-            }
+        .signUpBTN(120px, 5px, 2rem);
+        @media @phone{
+          width:100%;
+          padding: 25px;
         }
-      }
-  
-     .walk-img {
+
+        &:hover {
+          background: @porcelain;
+          color: @btn-bg-color;
+          border: 1px solid @btn-bg-color;
+        }
+      }//this closes btn
+    }//this closes walk-text
+
+    .walk-img {
       width: 46%;
       margin-left: 4%;
 
-      @media @mobile{
+      @media @phone {
         width:100%;
-        margin-left:0%;
-        margin-bottom:20px;
-        }
-     
+        margin-left: 0%;
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
-     }
-    
-  }
-}
+    }//this closes walk-img
+  }//this closes walk
+}// home

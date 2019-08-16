@@ -1,25 +1,36 @@
 // Mixins Here
 
-.image1 {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    }
+.topImage {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 
-  .navlinks {
-        font-size: 1.70rem;
-        padding:0px 20px 0px;
-        text-decoration: none;
-        color:@river-bend;
-    }
+.signUpBTN (@width, @radius, @fontSize) {
+  width: @width;
+  border-radius: @radius;
+  background: @btn-bg-color;
+  color: @porcelain;
+  text-align: center;
+  font-size: @fontSize;
+  padding: 10px;
+  
+}
 
-  .signupbutton (@width, @radius) {
-    width: @width;
-    border-radius: @radius;
-    background: @btn-bg-color;
-    color: white;
-    border:none;
-    text-align:center;
-    font-size: 1.5rem;
-    padding: 8px;
-    }
+.navigationLinks {
+font-size: 1.8rem;
+text-decoration:none;
+color: @river-bend;
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
