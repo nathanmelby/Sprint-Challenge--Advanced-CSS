@@ -46,7 +46,7 @@ Mobile first is the concept of designing and coding a website with the idea that
 
 4. How would you describe preprocessing to someone new to CSS?
 
-Preprocesors create an overlay that makes raw CSS easier to digest and write.
+Preprocesors create an overlay that makes raw CSS easier to digest and write. A preprocessor also unlocks some advanced functionality that would be impossible with raw CSS.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
